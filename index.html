@@ -207,14 +207,17 @@
             <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
                 <div class="p-6">
                     <h3 class="text-2xl font-bold text-green-field mb-4">Comment faire un passement de jambe</h3>
-                    <div class="aspect-w-16 aspect-h-9 mb-6">
-                        <!-- Vidéo locale -->
-                        <video id="tutorialVideo" controls class="w-full rounded-lg shadow-lg">
-                            <source src="video.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la lecture de vidéos.
-                        </video>
+                    <!-- Conteneur pour la vidéo avec ratio 16:9 -->
+                    <div class="relative w-full mb-6 overflow-hidden rounded-lg shadow-lg" style="padding-top: 56.25%;">
+                        <!-- L'iframe Vimeo -->
+                        <iframe 
+                        src="https://player.vimeo.com/video/1074491857?h=aa001f5d42" 
+                        class="absolute top-0 left-0 w-full h-full border-0"
+                        allow="autoplay; fullscreen; picture-in-picture" 
+                        allowfullscreen
+                        ></iframe>
                     </div>
-                    
+                   
                     <div class="article-content">
                         <p>
                             Le passement de jambe est l'un des gestes techniques les plus emblématiques du football. Popularisé par des joueurs comme Cristiano Ronaldo ou Ronaldinho, ce mouvement permet de mystifier le défenseur en faisant mine de jouer le ballon d'un côté pour finalement l'emmener de l'autre.
