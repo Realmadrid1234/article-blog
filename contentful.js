@@ -271,9 +271,9 @@ function loadSingleArticle() {
          <img src="${imageUrl}" alt="${article.title || 'Article sans titre'}" 
      class="w-full h-[600px] md:h-[800px] object-cover"
      style="object-position: center; border-bottom: 4px solid #3B7A57;"
-     onerror="this.src='https://via.placeholder.com/1200x600?text=Article';">
+     onerror="this.onerror=null; this.src='https://via.placeholder.com/1200x600?text=Image+non+disponible';">
 
- 
+ console.log('Erreur de chargement d\\'image, utilisation de l\\'image de secours');">
           <div class="p-8">
             <h1 class="text-3xl font-bold text-green-field mb-4">${article.title || 'Article sans titre'}</h1>
             
