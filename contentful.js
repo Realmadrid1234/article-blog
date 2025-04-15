@@ -268,10 +268,11 @@ function loadSingleArticle() {
       // Générer le HTML de l'article
       articleContainer.innerHTML = `
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-          <img src="${imageUrl}" alt="${article.title || 'Article sans titre'}" 
-     class="w-full h-[450px] md:h-[600px] object-cover"
+         <img src="${imageUrl}" alt="${article.title || 'Article sans titre'}" 
+     class="w-full h-[600px] md:h-[800px] object-cover"
      style="object-position: center; border-bottom: 4px solid #3B7A57;"
-     onerror="this.src='https://via.placeholder.com/800x400?text=Article';">
+     onerror="this.src='https://via.placeholder.com/1200x600?text=Article';">
+
  console.log('Erreur de chargement d\\'image, utilisation de l\\'image de secours');">
           <div class="p-8">
             <h1 class="text-3xl font-bold text-green-field mb-4">${article.title || 'Article sans titre'}</h1>
