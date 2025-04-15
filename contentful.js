@@ -273,7 +273,7 @@ function loadSingleArticle() {
      style="object-position: center; border-bottom: 4px solid #3B7A57;"
      onerror="this.src='https://via.placeholder.com/1200x600?text=Article';">
 
- console.log('Erreur de chargement d\\'image, utilisation de l\\'image de secours');">
+ 
           <div class="p-8">
             <h1 class="text-3xl font-bold text-green-field mb-4">${article.title || 'Article sans titre'}</h1>
             
