@@ -268,7 +268,6 @@ function loadSingleArticle() {
       // Générer le HTML de l'article
       articleContainer.innerHTML = `
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-
           <img src="${imageUrl}" alt="${article.title || 'Article sans titre'}" 
                class="w-full h-64 object-cover"
                onerror="this.src='https://via.placeholder.com/800x400?text=Article'; console.log('Erreur de chargement d\\'image, utilisation de l\\'image de secours');">
