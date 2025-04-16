@@ -269,14 +269,6 @@ function loadSingleArticle() {
       articleContainer.innerHTML = `
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
 
-      const img = document.getElementById('image-principale');
-      if (img) {
-        img.onerror = function() {
-          console.log("Erreur de chargement de l'image principale, image de secours utilisée.");
-          this.src = 'https://via.placeholder.com/1200x600?text=Image+non+disponible';
-        };
-      }
-
           <img src="${imageUrl}" alt="${article.title || 'Article sans titre'}" 
                class="w-full h-64 object-cover"
                onerror="this.src='https://via.placeholder.com/800x400?text=Article'; console.log('Erreur de chargement d\\'image, utilisation de l\\'image de secours');">
